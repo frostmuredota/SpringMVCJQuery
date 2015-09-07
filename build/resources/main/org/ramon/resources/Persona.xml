@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.corg/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="person1" class="org.ramon.model.Persona">
+		<property name="id" value="1"></property>
+		<property name="nombre" value="Ramón"></property>
+		<property name="apellido" value="Duran"></property>
+		<property name="username" value="admin"></property>
+		<property name="email" value="anonymous@gmail.com"></property>
+		<property name="password" value="123456"></property>
+		<property name="img" value="img1.jpg"></property>
+	</bean>
+	<bean id="person2" class="org.ramon.model.Persona">
+		<property name="id" value="2"></property>
+		<property name="nombre" value="Jose"></property>
+		<property name="apellido" value="Pérez"></property>
+		<property name="username" value="joselote123"></property>
+		<property name="email" value="jose@gmail.com"></property>
+		<property name="password" value="111111"></property>
+		<property name="img" value="img2.jpg"></property>
+	</bean>
+	<bean id="person3" class="org.ramon.model.Persona">
+		<property name="id" value="3"></property>
+		<property name="nombre" value="Claudio"></property>
+		<property name="apellido" value="Fuentes"></property>
+		<property name="username" value="claudio123"></property>
+		<property name="email" value="claudio@gmail.com"></property>
+		<property name="password" value="333333"></property>
+		<property name="img" value="img3.jpg"></property>
+	</bean>
+
+</beans>

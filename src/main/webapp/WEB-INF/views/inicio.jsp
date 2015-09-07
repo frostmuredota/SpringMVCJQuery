@@ -16,7 +16,7 @@
 	<br>
 	<div class="index">
 		<h2>${message}</h2>
-		<form method="post" action="registrado.html" id="session" novalidate="novalidate" onsubmit="return initsession();">
+		<form method="post" action="exito.html" id="session" novalidate="novalidate" onsubmit="return initsession();">
 			<table align="center">
 				<tr>
 					<td>Username:</td>

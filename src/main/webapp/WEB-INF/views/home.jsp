@@ -11,5 +11,6 @@
 
 <P>  The time on the server is ${serverTime}. </P>
 <a href="inicio.html">For Log in, click here </a></br>
+
 </body>
 </html>
