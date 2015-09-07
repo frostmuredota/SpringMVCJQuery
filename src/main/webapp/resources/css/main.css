@@ -1,0 +1,53 @@
+body{
+	background-image: url('http://crunchify.com/bg.png');
+}
+.register {
+	font-family: verdana;
+	padding: 20px;
+	border-radius: 10px;
+	font-size: 10px;
+	text-align: center;
+	width:40%;
+	border:transparent;
+	background: #6681e8;
+	margin-top:100px;
+	margin-left: 400px;
+}
+.center {
+	font-family: verdana;
+    padding: 20px;
+	border-radius: 10px;
+	font-size: 10px;
+	text-align: center;
+	width:60%;
+	border:3px solid #8AC007;
+	margin:auto;
+
+}
+.index {
+	font-family: verdana;
+	padding: 20px;
+	border-radius: 10px;
+	font-size: 10px;
+	text-align: center;
+	width:40%;
+	border:transparent;
+	background: #6681e8;
+	margin-top:100px;
+	margin-left: 400px;
+}
+.tindex tr:nth-child(2n-1) {
+	background: #9bc0e8;
+
+}
+.tindex tr:nth-child(2n){
+	background: #ff002f;
+}
+
+td label {
+    color: #FF0000;
+}
+.focus {
+    border: 2px solid #AA88FF;
+    background-color: #FFEEAA;
+}
