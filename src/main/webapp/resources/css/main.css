@@ -48,3 +48,10 @@ body {
 .fail {
 	color: red;
 }
+.div1{
+	margin: auto;
+    width: 60%;
+    padding: 10px;
+    background:red;
+    height:60%;
+}

@@ -40,7 +40,7 @@ public class HomeController {
 	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
-		logger.info("Welcome home! The client locale is {}.", locale);
+		logger.info("Loading Init Page");
 		
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
@@ -54,6 +54,7 @@ public class HomeController {
 	
 	@RequestMapping("/inicio")
 	public ModelAndView helloWorld(){
+		logger.info("Loading Index Page");
 		return new ModelAndView("inicio", "message", "Session Login");
 	}
 	
@@ -61,16 +62,20 @@ public class HomeController {
 	public String inicioSesion (@RequestParam("username") String user,
 			@RequestParam("password") String pass, Persona p ,ModelMap model,
 			RedirectAttributes redirectAttributes, SessionStatus sessionStatus) {
-	
+		logger.info("Loading sucessfull Page");
+		logger.info("Searching Person Init Page");
 		Persona persona = buscarPersonaList(user, pass);
 		if (persona != null) {
+			logger.debug("Person find");
 			if (persona.getUsername().equals("admin")) {
+				logger.debug("Session Admin");
 				model.addAttribute("persons", personas);
 				model.addAttribute("Nombre", " ");
 				model.addAttribute("Apellido", " ");
 				model.addAttribute("Username", p.getUsername());
 				return "exito";
 			} else {
+				logger.debug("Session other person");
 				model.addAttribute("bienvenido", "Bienvenido");
 				model.addAttribute("Id", persona.getId());
 				model.addAttribute("Username", persona.getUsername());
@@ -83,6 +88,7 @@ public class HomeController {
 			}
 
 		} else {
+			logger.error("Person not find");
 			redirectAttributes.addFlashAttribute("error",
 					"wrong in username or password");
 			return "redirect:inicio";
